@@ -1,0 +1,43 @@
+.container {
+    width: 1140px;
+}
+
+.app-left-container {
+	background-color: #00ff00;
+	width: 50%;
+	float: left;
+	margin-left: auto;
+	margin-right: auto;
+	display: inline-block;
+	border: 1px solid blue;    
+}
+
+.app-right-container {
+	display: inline-block;
+	background-color: #ff0000;
+	width: 50%;
+	float: right;
+	margin-left: auto;
+	margin-right: auto;
+	display: inline-block;
+	border: 1px solid blue;  
+}
+
+span.b {
+  display: inline-block;
+  width: 500px;
+  height: auto; /* 250 */
+  padding: 5px;
+  border: 1px solid blue;    
+  background-color: yellow; 
+}
+
+.col-container {
+  display: flex;
+  width: 100%;
+}
+.col {
+  	flex: 1;
+  	padding: 16px;
+	align-content: center;
+}

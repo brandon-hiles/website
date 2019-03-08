@@ -1,0 +1,66 @@
+#custom-button {
+   padding: 10px;
+   color: white;
+   background-color: #009578;
+   border: 1px solid #000;
+   border-radius: 5px;
+   cursor: pointer;
+}
+
+#custom-button:hover {
+   background-color: #00b28f;
+}
+
+#custom-text {
+   margin-left: 10px;
+   font-fmaily: sans-serif;
+   color: #aaa;
+}
+
+.main {
+  position: absolute;
+  width: 300px;
+  height: 200px;
+  z-index: 15;
+  top: 50%;
+  left: 50%;
+  margin: -100px 0 0 -150px;
+}
+
+.title {
+  text-align:center;
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+.active {
+  background-color: #4CAF50;
+}
+
+/* ---- Home CSS ----- */
+.home-container {
+  text-align: center;
+}
