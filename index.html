@@ -3,6 +3,25 @@
 	<head>
 		<title> Brandon Hiles Website </title>
       <link rel="stylesheet" href="css/main.css">
+      <style>
+        .flex-container {
+          display: flex;
+          justify-content: column;
+          background-color: DodgerBlue;
+        }
+
+        .flex-container > div {
+          background-color: #f1f1f1;
+          width: 1000px;
+          margin: 10px;
+          text-align: center;
+          line-height: 20px;
+          font-size: 12px;
+        }
+        body {
+          background-color: DodgerBlue;
+        }
+      </style>
 	</head>
 
 	<body>
@@ -12,16 +31,25 @@
           <li style="float:right"><a class="active" target="_blank" href="resume.pdf">Resume</a></li>
         	<li style="float:right"> <a class="active" href="apps.html"> Apps </a> </li>
       </ul>
-
-      <h1> Small Bio of Myself </h1>
-      <p> Recent graduate from the University of Waterloo with a bachelors in Science, specialization in physics and astronomy. Throughout my University Career, I have developed strong development skills through co-op experiences, engineering teams, and personal projects. This website illustrates my current technological interests and some of my previous projects, which can be found in my apps section. Although, I have a formal education in science, I have built my career off of being mainly self taught in the field of software development. </p>
-      <h1> Technology Breakdown: </h1>
+      <div class="flex-container">
+        <div>      <h1> Small Bio of Myself </h1>
+      <p> Recent graduate from the University of Waterloo with a bachelors in Science, specialization in physics and astronomy. Throughout my University Career, I have developed strong development skills through co-op experiences, engineering teams, and personal projects. This website illustrates my current technological interests and some of my previous projects, which can be found in my apps section. Although, I have a formal education in science, I have built my career off of being mainly self taught in the field of software development. </p></div>
+        <div>      <h1> Technology Breakdown: </h1>
       <p> Frontend Technologies: <br>
       Frontend Frameworks: Angular, React, Vue.js <br>
       Frontend Testing Frameworks: Jest, Cyrprus, Selenium <br>
       Languages: Javascript, Typescript, Coffeescript
       </p>
-
+      <p> Backend Technologies <br>
+      Backend Frameworks: Flask, Django, Rails <br>
+      Backend Testing Frameworks: Unittest (Python3), ... <br>
+      Languages: Python 2.7/3.6, Java, GO</div>
+        <div><h1> Current Interests </h1>       <p> My current interests can be broken down into 4 sections: <br>
+      1. Computer Technologies <br>
+      2. Quantum Information <br>
+      3. Quantum Mechanics Research <br> 
+      4. Fitness </p></div> 
+      </div>
 	</body>
 
 </html>
