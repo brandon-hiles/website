@@ -4,7 +4,8 @@
 		<title> Brandon Hiles Website </title>
       <link rel="stylesheet" href="css/main.css">
       <link rel="stylesheet" href="css/normalize.css">
-      <link rel="stylesheet" href="css/app.css">
+      <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
       <style>
         .flex-container {
           display: flex;
@@ -29,16 +30,35 @@
         html {
           background-color: #fff;
           color: #555;
+          font-family: 'Lato', sans-serif;
         }
-        .apps {
-          background-color: DodgerBlue;
+        #apps {
+          background-size: cover;
+          background-image: url("img/dark-paths.png");
+          background-position: center;     
         }
         .main-title {
           margin: 0;
           text-align: center;
           font-size: 50;
           color: white;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          margin-right: -50%;
+          transform: translate(-50%, -50%); 
         }
+        .sub-title {
+          margin: 0;
+          text-align: center;
+          color: white;
+          position: absolute;
+          top: 56%;
+          left: 50%;
+          margin-right: -50%;
+          transform: translate(-50%, -50%);
+        }
+
       </style>
 	</head>
 
@@ -48,13 +68,14 @@
         <li><a class="active" href=".">Home</a></li>
         <li style="float:right"> <a class="active" target="_blank" href="https://www.github.com/brandon-hiles"> Github </a> </li>         
         <li style="float:right"><a class="active" target="_blank" href="resume.pdf">Resume</a></li>
-        <li style="float:right"> <a class="active" href="apps.html"> Apps </a> </li>
+        <li style="float:right"> <a class="active" href="http://localhost/website/index.html#apps"> Apps </a> </li>
       </ul>
     </nav>
     <header>
     <h1 class="main-title"> Brandon Hiles </h1>
+    <p class="sub-title"> Full Stack Developer </p>
     </header>
-      <section class="apps">
+      <section id="apps">
           <div class="col-container">
       <div class="col">
         <h2> Erika </h2>
@@ -84,7 +105,7 @@
     </div>
     <div class="col-container">
       <div class="col">
-        <h2> <a href='http://www.brandonhiles.com/apps/chexpiry/' target="_blank">  Chexpiry </a></h2>
+        <h2> <a href='http://www.brandonhiles.com/apps/chexpiry/' target="_blank" style="  text-decoration: none;">  Chexpiry </a></h2>
         <img src="img/chexpiry.png" width="400" height=200">      
       </div>
 
@@ -97,27 +118,8 @@
     </div>
       </section>
 
-      <section>
-        <div class="flex-container">
-        <div>      <h1> Small Bio of Myself </h1>
-      <p> Recent graduate from the University of Waterloo with a bachelors in Science, specialization in physics and astronomy. Throughout my University Career, I have developed strong development skills through co-op experiences, engineering teams, and personal projects. This website illustrates my current technological interests and some of my previous projects, which can be found in my apps section. Although, I have a formal education in science, I have built my career off of being mainly self taught in the field of software development. </p></div>
-        <div>      <h1> Technology Breakdown: </h1>
-      <p> Frontend Technologies: <br>
-      Frontend Frameworks: Angular, React, Vue.js <br>
-      Frontend Testing Frameworks: Jest, Cyrprus, Selenium <br>
-      Languages: Javascript, Typescript, Coffeescript
-      </p>
-      <p> Backend Technologies <br>
-      Backend Frameworks: Flask, Django, Rails <br>
-      Backend Testing Frameworks: Unittest (Python3), ... <br>
-      Languages: Python 2.7/3.6, Java, GO</div>
-        <div><h1> Current Interests </h1>       <p> My current interests can be broken down into 4 sections: <br>
-      1. Computer Technologies <br>
-      2. Quantum Information <br>
-      3. Quantum Mechanics Research <br> 
-      4. Fitness </p></div> 
-      </div>
-      </section>
+      <section class='blog'> </section>
+
 	</body>
 
 </html>
