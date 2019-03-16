@@ -1,38 +1,17 @@
-#custom-button {
-   padding: 10px;
-   color: white;
-   background-color: #009578;
-   border: 1px solid #000;
-   border-radius: 5px;
-   cursor: pointer;
+/* --- General HTML Elements -- */
+html {
+  background-color: #fff;
+  color: #555;
+  font-family: 'Lato', sans-serif;
 }
 
-#custom-button:hover {
-   background-color: #00b28f;
+a {
+  text-decoration:none; /* No underscores */
+  color: #304ffe; /* Migrate to only apps section */
 }
 
-#custom-text {
-   margin-left: 10px;
-   font-fmaily: sans-serif;
-   color: #aaa;
-}
-
-.main {
-  position: absolute;
-  width: 300px;
-  height: 200px;
-  z-index: 15;
-  top: 50%;
-  left: 50%;
-  margin: -100px 0 0 -150px;
-}
-
-.title {
-  text-align:center;
-  color: white;
-}
-
-ul {
+/* --- Nav Bar --- */
+nav ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -40,11 +19,11 @@ ul {
   background-color: #333;
 }
 
-li {
+nav ul li {
   float: left;
 }
 
-li a {
+nav ul li a {
   display: block;
   color: white;
   text-align: center;
@@ -52,53 +31,51 @@ li a {
   text-decoration: none;
 }
 
-/* Change the link color to #111 (black) on hover */
-li a:hover {
-  background-color: #111;
-}
 .active {
   background-color: #4CAF50;
 }
 
-/* ---- Home CSS ----- */
-.home-container {
+/* Change the link color to #111 (black) on hover */
+nav ul li a:hover {
+  background-color: #111;
+}
+
+/* Header CSS Formating  */
+header {
+  background-size: cover;
+  background-image: linear-gradient(rgba(0,0,0,0.2),#000), url("img/background.jpeg");
+  background-position: center;
+  height: 100vh;          
+}
+
+.main-title {
+  margin: 0;
   text-align: center;
+  font-size: 50;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%); 
+}
+.sub-title {
+  margin: 0;
+  text-align: center;
+  color: white;
+  position: absolute;
+  top: 56%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
 }
 
-.container {
-    width: 1140px;
+/* --- App Section --- */
+#apps {
+  background-size: cover;
+  background-image: url("img/dark-paths.png");
+  background-position: center;     
 }
-
-.app-left-container {
-  background-color: #00ff00;
-  width: 50%;
-  float: left;
-  margin-left: auto;
-  margin-right: auto;
-  display: inline-block;
-  border: 1px solid blue;    
-}
-
-.app-right-container {
-  display: inline-block;
-  background-color: #ff0000;
-  width: 50%;
-  float: right;
-  margin-left: auto;
-  margin-right: auto;
-  display: inline-block;
-  border: 1px solid blue;  
-}
-
-span.b {
-  display: inline-block;
-  width: 500px;
-  height: auto; /* 250 */
-  padding: 5px;
-  border: 1px solid blue;    
-  background-color: yellow; 
-}
-
 .col-container {
   display: flex;
   width: 100%;
@@ -106,7 +83,33 @@ span.b {
   text-decoration: none;
 }
 .col {
-    flex: 1;
-    padding: 16px;
+  flex: 1;
+  padding: 16px;
   align-content: center;
+}
+
+/* --- Blog Section --- */
+#blog {
+  background-size: cover;
+  background-image: url("img/blog.jpeg");
+  background-position: center;     
+}
+
+.main-format {
+  /* Add stuff here */
+}
+
+.flex-container {
+  display: flex;
+  justify-content: column;
+  align-items: center;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  width: 1000px;
+  margin: 10px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 12px;
 }

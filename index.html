@@ -5,61 +5,6 @@
       <link rel="stylesheet" href="css/main.css">
       <link rel="stylesheet" href="css/normalize.css">
       <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-
-      <style>
-        .flex-container {
-          display: flex;
-          justify-content: column;
-          align-items: center;
-        }
-
-        .flex-container > div {
-          background-color: #f1f1f1;
-          width: 1000px;
-          margin: 10px;
-          text-align: center;
-          line-height: 20px;
-          font-size: 12px;
-        }
-        header {
-          background-size: cover;
-          background-image: linear-gradient(rgba(0,0,0,0.2),#000), url("img/background.jpeg");
-          background-position: center;
-          height: 100vh;          
-        }
-        html {
-          background-color: #fff;
-          color: #555;
-          font-family: 'Lato', sans-serif;
-        }
-        #apps {
-          background-size: cover;
-          background-image: url("img/dark-paths.png");
-          background-position: center;     
-        }
-        .main-title {
-          margin: 0;
-          text-align: center;
-          font-size: 50;
-          color: white;
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          margin-right: -50%;
-          transform: translate(-50%, -50%); 
-        }
-        .sub-title {
-          margin: 0;
-          text-align: center;
-          color: white;
-          position: absolute;
-          top: 56%;
-          left: 50%;
-          margin-right: -50%;
-          transform: translate(-50%, -50%);
-        }
-
-      </style>
 	</head>
 
 	<body>
@@ -69,56 +14,84 @@
         <li style="float:right"> <a class="active" target="_blank" href="https://www.github.com/brandon-hiles"> Github </a> </li>         
         <li style="float:right"><a class="active" target="_blank" href="resume.pdf">Resume</a></li>
         <li style="float:right"> <a class="active" href="http://localhost/website/index.html#apps"> Apps </a> </li>
+        <li style="float: right"> <a class="active" href="#"> Blog </a></li>
+
       </ul>
     </nav>
+
     <header>
-    <h1 class="main-title"> Brandon Hiles </h1>
-    <p class="sub-title"> Full Stack Developer </p>
+      <h1 class="main-title"> Brandon Hiles </h1>
+      <p class="sub-title"> Full Stack Developer </p>
     </header>
-      <section id="apps">
-          <div class="col-container">
-      <div class="col">
-        <h2> Erika </h2>
-        <img src="img/erika.png" width="400" height=200">      
+
+    <section id="apps">
+      <div class="col-container">
+        <div class="col">
+          <h2> Erika </h2>
+          <img src="img/erika.png" width="400" height="200"/>      
+        </div>
+
+        <div class="col">
+          <h2>Erika Description</h2>
+          <p> Erika is an AI financial assistant, that helps investors make quick decisions by providing open source data such as company data, economic data. This Application is written using the Angular Framework for Front-end functionality, and utilizes a Python3 backend running a Flask based server. The main AI component utilizes an in-house based NLP model, that is freely available on github, and communicates with python through an internal ubuntu server.</p>
+          <p> Status: On-going </p>
+          <p> Github Link: <a href='https://github.com/brandon-hiles/erika' target="_blank"> https://github.com/brandon-hiles/erika </a> </p>
+        </div>
       </div>
 
-      <div class="col">
-        <h2>Erika Description</h2>
-        <p> Erika is an AI financial assistant, that helps investors make quick decisions by providing open source data such as company data, economic data. This Application is written using the Angular Framework for Front-end functionality, and utilizes a Python3 backend running a Flask based server. The main AI component utilizes an in-house based NLP model, that is freely available on github, and communicates with python through an internal ubuntu server.</p>
-        <p> Status: On-going </p>
-        <p> Github Link: <a href='https://github.com/brandon-hiles/erika' target="_blank"> https://github.com/brandon-hiles/erika </a> </p>
+      <div class="col-container">
+        <div class="col">
+          <h2> Clockly - The Time Wizard </a></h2>
+          <img src="img/time_app.png" width="400" height="200">
+        </div>
+        <div class="col">
+          <h2>Clockly Description</h2>
+          <p> Time Management is an important skill to master, and managing your available is important for understanding where you spend most of your time. This may be espically useful, when working on projects, and understanding whether you are reading documentation, actually writing code, standup meetings, etc. and managing all of this information can be challenging. This problem can be solved with this application called Clockly. Clockly is a lightweight javascript application that takes in either pre-defined csv files and/or manually inserted data and helps track time analytics by providing reports either in browser or through email services.</p>
+          <p> Status: On-going </p>
+          <p> Try out this Application: <a href="http://www.brandonhiles.com/apps/time-wizard" target="_blank"> http://www.brandonhiles.com/apps/time-wizard </a> </p>
+          <p> Github Link: <a href='https://github.com/brandon-hiles/time-wizard' target="_blank"> https://github.com/brandon-hiles/time-wizard </a> </p>
+        </div>
       </div>
-    </div>
+      <div class="col-container">
+        <div class="col">
+          <h2>  Chexpiry </h2>
+          <img src="img/chexpiry.png" width="400" height="200">      
+        </div>
 
-    <div class="col-container">
-      <div class="col">
-        <h2> <a href="http://www.brandonhiles.com/apps/time-wizard" target="_blank"> Clockly - The Time Wizard </a></h2>
-        <img src="img/time_app.png" width="400" height=200">
+        <div class="col">
+          <h2>Chexpiry Description</h2>
+          <p> Chexpiry is an application that tackles the issue of sustainability through the minimization of food wastage. This application utilizes computer vision AI models provided by google to analyze food, mainly produce, to understand expiration dates by analyzing color tones of said produce. This application was developed for UofT Hacks VI, the architeture of this application was written using the Bootstrap library for the frontend, and using a python3 backend using Flask. The Application was hosted through Heroku.</p>
+          <p> Status: Complete </p>
+          <p> Try out this Application: <a href='http://www.brandonhiles.com/apps/chexpiry/' target="_blank">  http://www.brandonhiles.com/apps/chexpiry/ </a> </p>
+          <p> Github Link: <a href='https://github.com/brandon-hiles/Chexpiry' target="_blank">  https://github.com/brandon-hiles/Chexpiry </a> </p>
+        </div>
       </div>
-      <div class="col">
-        <h2>Clockly Description</h2>
-        <p> Time Management is an important skill to master, and managing your available is important for understanding where you spend most of your time. This may be espically useful, when working on projects, and understanding whether you are reading documentation, actually writing code, standup meetings, etc. and managing all of this information can be challenging. This problem can be solved with this application called Clockly. Clockly is a lightweight javascript application that takes in either pre-defined csv files and/or manually inserted data and helps track time analytics by providing reports either in browser or through email services.</p>
-        <p> Status: On-going </p>
-        <p> Github Link: <a href='https://github.com/brandon-hiles/time-wizard' target="_blank"> https://github.com/brandon-hiles/time-wizard </a>
-        </p>
-      </div>
-    </div>
-    <div class="col-container">
-      <div class="col">
-        <h2> <a href='http://www.brandonhiles.com/apps/chexpiry/' target="_blank" style="  text-decoration: none;">  Chexpiry </a></h2>
-        <img src="img/chexpiry.png" width="400" height=200">      
-      </div>
+    </section>
 
-      <div class="col">
-        <h2>Chexpiry Description</h2>
-        <p> Chexpiry is an application that tackles the issue of sustainability through the minimization of food wastage. This application utilizes computer vision AI models provided by google to analyze food, mainly produce, to understand expiration dates by analyzing color tones of said produce. This application was developed for UofT Hacks VI, the architeture of this application was written using the Bootstrap library for the frontend, and using a python3 backend using Flask. The Application was hosted through Heroku.</p>
-        <p> Status: Complete </p>
-        <p> Github Link: <a href='https://github.com/brandon-hiles/Chexpiry' target="_blank">  https://github.com/brandon-hiles/Chexpiry </a> </p>
+    <section id='blog'> 
+      <div class="main-format">
+        <h1 style="text-align: center; color: white"> March Blog Post </h1>
+        <h2 style="text-align: center; color: white"> Appication Updates</h2>
+        <div class="flex-container">
+          <div>
+            <h3> Clocky Update: </h3>
+            <p> Implemented the following features:
+              <br> 1. Integrated AWS for storage 
+              <br> 2. Started implementation of d3.js for visualization
+              <br> 3. Built a login page
+            </p>
+          </div>
+          <div>
+            <h3> Erika Update </h3>
+            <p> Implemented the following features:
+              <br> 1. Utilized MongoDB for full text search
+              <br> 2. Implemented a starting API template
+              <br> 3. Started implemented of data visualization
+            </p>
+          </div>
+        </div>
       </div>
-    </div>
-      </section>
-
-      <section class='blog'> </section>
+    </section>
 
 	</body>
 
