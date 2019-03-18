@@ -3,8 +3,8 @@
 	<head>
 		<title> Brandon Hiles Website </title>
       <link rel="stylesheet" href="css/main.css">
-      <link rel="stylesheet" href="css/normalize.css">
-      <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+      <link rel="stylesheet" href="css/external/normalize.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 	</head>
 
 	<body>
@@ -14,7 +14,7 @@
         <li style="float:right"> <a class="active" target="_blank" href="https://www.github.com/brandon-hiles"> Github </a> </li>         
         <li style="float:right"><a class="active" target="_blank" href="resume.pdf">Resume</a></li>
         <li style="float:right"> <a class="active" href="http://localhost/website/index.html#apps"> Apps </a> </li>
-        <li style="float: right"> <a class="active" href="#"> Blog </a></li>
+        <li style="float: right"> <a class="active" href="http://localhost/website/index.html#blog"> Blog </a></li>
 
       </ul>
     </nav>
@@ -24,16 +24,40 @@
       <p class="sub-title"> Full Stack Developer </p>
     </header>
 
+    <section id = 'about'>
+      <h1 style="text-align: center; color: white; margin: 0;"> About Section </h1>
+        <div class="about-flex-container">
+          <div style="color: #81d4fa">
+            <h1> Small Bio of Myself </h1>
+            <p> Hello, my name is Brandon Hiles, and thank you for checking out my website. I am a fullstack engineer with expertises in the MEAN stack and Flask framework, recently I have graduated from the University of Waterloo with a bachelors in sceince in physics and astronomy. Throughout my career, I have developed strong development skills through co-op experiences, engineering teams, and personal projects.  </p>
+            <p> This website illustrates my current technological interests and some of my prvious projects, which can be found in my apps section below. Although, I have a formal education in science, I have built my career through self taught and innovation in the field of software development. </p>
+          </div>
+          <div style="color: #81d4fa">
+            <h1> Technology Breakdown: </h1>
+            <p>
+                Frontend Frameworks: Angular, React, Vue.js <br>
+                Frontend Testing Frameworks: Jest, Cyrprus, Selenium <br>
+                Languages: Javascript, Typescript, Coffeescript <br>
+                <hr>
+                Backend Frameworks: Flask, Django, Rails <br>
+                Backend Testing Frameworks: Unittest (Python3), ... <br>
+                Languages: Python 2.7/3.6, Java, GO 
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section id="apps">
       <div class="col-container">
         <div class="col">
           <h2> Erika </h2>
-          <img src="img/erika.png" width="400" height="200"/>      
+          <img src="css/img/erika.png" width="400" height="200"/>      
         </div>
 
         <div class="col">
           <h2>Erika Description</h2>
-          <p> Erika is an AI financial assistant, that helps investors make quick decisions by providing open source data such as company data, economic data. This Application is written using the Angular Framework for Front-end functionality, and utilizes a Python3 backend running a Flask based server. The main AI component utilizes an in-house based NLP model, that is freely available on github, and communicates with python through an internal ubuntu server.</p>
+          <p> Erika is an AI financial assistant, that helps investors make quick decisions by providing open source data such as company data, economic data. This Application is written using the Angular Framework for Front-end functionality, and utilizes a Python3 backend running a Flask based server. The main AI component utilizes an in-house based NLP model, that is freely available on github, and communicates with python through an internal ubuntu server.</p> <!-- Update this description -->
           <p> Status: On-going </p>
           <p> Github Link: <a href='https://github.com/brandon-hiles/erika' target="_blank"> https://github.com/brandon-hiles/erika </a> </p>
         </div>
@@ -42,11 +66,11 @@
       <div class="col-container">
         <div class="col">
           <h2> Clockly - The Time Wizard </a></h2>
-          <img src="img/time_app.png" width="400" height="200">
+          <img src="css/img/time_app.png" width="400" height="200">
         </div>
         <div class="col">
           <h2>Clockly Description</h2>
-          <p> Time Management is an important skill to master, and managing your available is important for understanding where you spend most of your time. This may be espically useful, when working on projects, and understanding whether you are reading documentation, actually writing code, standup meetings, etc. and managing all of this information can be challenging. This problem can be solved with this application called Clockly. Clockly is a lightweight javascript application that takes in either pre-defined csv files and/or manually inserted data and helps track time analytics by providing reports either in browser or through email services.</p>
+          <p> Time Management is an important skill to master, and managing your available is important for understanding where you spend most of your time. This may be espically useful, when working on projects, and understanding whether you are reading documentation, actually writing code, standup meetings, etc. and managing all of this information can be challenging. This problem can be solved with this application called Clockly. Clockly is a lightweight javascript application that takes in either pre-defined csv files and/or manually inserted data and helps track time analytics by providing reports either in browser or through email services.</p> <!-- Update this description -->
           <p> Status: On-going </p>
           <p> Try out this Application: <a href="http://www.brandonhiles.com/apps/time-wizard" target="_blank"> http://www.brandonhiles.com/apps/time-wizard </a> </p>
           <p> Github Link: <a href='https://github.com/brandon-hiles/time-wizard' target="_blank"> https://github.com/brandon-hiles/time-wizard </a> </p>
@@ -55,12 +79,12 @@
       <div class="col-container">
         <div class="col">
           <h2>  Chexpiry </h2>
-          <img src="img/chexpiry.png" width="400" height="200">      
+          <img src="css/img/chexpiry.png" width="400" height="200">      
         </div>
 
         <div class="col">
           <h2>Chexpiry Description</h2>
-          <p> Chexpiry is an application that tackles the issue of sustainability through the minimization of food wastage. This application utilizes computer vision AI models provided by google to analyze food, mainly produce, to understand expiration dates by analyzing color tones of said produce. This application was developed for UofT Hacks VI, the architeture of this application was written using the Bootstrap library for the frontend, and using a python3 backend using Flask. The Application was hosted through Heroku.</p>
+          <p> Chexpiry is an application that tackles the issue of sustainability through the minimization of food wastage. This application utilizes computer vision AI models provided by google to analyze food, mainly produce, to understand expiration dates by analyzing color tones of said produce. This application was developed for UofT Hacks VI, the architeture of this application was written using the Bootstrap library for the frontend, and using a python3 backend using Flask. The Application was hosted through Heroku.</p> <!-- Update this description -->
           <p> Status: Complete </p>
           <p> Try out this Application: <a href='http://www.brandonhiles.com/apps/chexpiry/' target="_blank">  http://www.brandonhiles.com/apps/chexpiry/ </a> </p>
           <p> Github Link: <a href='https://github.com/brandon-hiles/Chexpiry' target="_blank">  https://github.com/brandon-hiles/Chexpiry </a> </p>
@@ -70,7 +94,7 @@
 
     <section id='blog'> 
       <div class="main-format">
-        <h1 style="text-align: center; color: white"> March Blog Post </h1>
+        <h1 style="text-align: center; color: white; margin: 0;"> March Blog Post </h1>
         <h2 style="text-align: center; color: white"> Appication Updates</h2>
         <div class="flex-container">
           <div>
@@ -91,6 +115,24 @@
           </div>
         </div>
       </div>
+        <h2 style="text-align: center; color: white"> Fitness Updates</h2>
+        <div class="flex-container">
+          <div>
+            <h3> Weight Lifting Update: </h3>
+            <p> Deadlift: 3 reps of 335 <br>
+                Bench Press: 3 reps of 150 <br>
+                Overhead Press: 3 reps of 135 <br>
+                Squat: 3 reps of 200 <br>
+            </p>
+          </div>              
+          <div>
+            <h3> Cardio Update: </h3>
+            <p> Sled push: 235 lb for 25 m <br>
+                Treadmill: 1 miles in 20 mins <br>
+                Stairmaster: 100 floors in 20 mins <br>
+            </p>
+          </div>
+        </div>
     </section>
 
 	</body>

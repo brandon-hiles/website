@@ -91,7 +91,7 @@ header {
 /* --- Blog Section --- */
 #blog {
   background-size: cover;
-  background-image: url("img/blog.jpeg");
+  background-image: linear-gradient(rgba(0,0,0,0.3),#000), url("img/blog.jpeg");
   background-position: center;     
 }
 
@@ -107,6 +107,28 @@ header {
 
 .flex-container > div {
   background-color: #f1f1f1;
+  width: 1000px;
+  margin: 10px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 12px;
+}
+
+/* ---- About Section --- */
+#about {
+  background-size: cover;
+  background-image: url("img/darkness.png");
+  background-position: center;     
+}
+
+.about-flex-container {
+  display: flex;
+  justify-content: column;
+ /* align-items: center; */
+}
+
+.about-flex-container > div {
+  /*background-color: #f1f1f1;*/
   width: 1000px;
   margin: 10px;
   text-align: center;
