@@ -3,6 +3,7 @@ html {
   background-color: #fff;
   color: #555;
   font-family: 'Lato', sans-serif;
+  height: 100%;
 }
 
 a {
@@ -11,6 +12,12 @@ a {
 }
 
 /* --- Nav Bar --- */
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
 nav ul {
   list-style-type: none;
   margin: 0;
@@ -115,21 +122,17 @@ header {
 }
 
 /* ---- About Section --- */
-#about {
-  background-size: cover;
-  background-image: url("img/darkness.png");
-  background-position: center;     
-}
 
 .about-flex-container {
   display: flex;
   justify-content: column;
+  float: left;
  /* align-items: center; */
 }
 
 .about-flex-container > div {
   /*background-color: #f1f1f1;*/
-  width: 1000px;
+  width: 550px;
   margin: 10px;
   text-align: center;
   line-height: 20px;

@@ -5,10 +5,56 @@
       <link rel="stylesheet" href="css/main.css">
       <link rel="stylesheet" href="css/external/normalize.css">
       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+      <style type="text/css">
+        #about {
+        display: flex;
+        background-size: cover;
+        background-image: url("css/img/darkness.png");
+        background-position: center;  
+        margin: 0;
+        height: 100%;
+      }
+
+      .about-header {
+        text-align: center;
+        color: white;
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+      }
+
+      .main-container {
+        height: 50%;
+        display: flex;
+      }
+
+      .left-container {
+        flex: 2 1 auto;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .right-container {
+        flex: 1 1 auto;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .half-containers {
+        flex: 1;
+        overflow: auto;
+      }
+
+      p {
+        color: #81d4fa;
+      } 
+      </style>
 	</head>
 
 	<body>
-    <nav>
+    <nav class="sticky">
       <ul>
         <li><a class="active" href=".">Home</a></li>
         <li style="float:right"> <a class="active" target="_blank" href="https://www.github.com/brandon-hiles"> Github </a> </li>         
@@ -25,27 +71,54 @@
     </header>
 
     <section id = 'about'>
-      <h1 style="text-align: center; color: white; margin: 0;"> About Section </h1>
-        <div class="about-flex-container">
+      <!-- Try Implementing the following feature:  https://css-tricks.com/snippets/css/a-guide-to-flexbox/ -->
+      <h1 class="about-header"> About Section </h1>
+        <div class="about-flex-container" style="clear: left">
           <div style="color: #81d4fa">
             <h1> Small Bio of Myself </h1>
-            <p> Hello, my name is Brandon Hiles, and thank you for checking out my website. I am a fullstack engineer with expertises in the MEAN stack and Flask framework, recently I have graduated from the University of Waterloo with a bachelors in sceince in physics and astronomy. Throughout my career, I have developed strong development skills through co-op experiences, engineering teams, and personal projects.  </p>
-            <p> This website illustrates my current technological interests and some of my prvious projects, which can be found in my apps section below. Although, I have a formal education in science, I have built my career through self taught and innovation in the field of software development. </p>
-          </div>
-          <div style="color: #81d4fa">
-            <h1> Technology Breakdown: </h1>
-            <p>
-                Frontend Frameworks: Angular, React, Vue.js <br>
-                Frontend Testing Frameworks: Jest, Cyrprus, Selenium <br>
-                Languages: Javascript, Typescript, Coffeescript <br>
-                <hr>
-                Backend Frameworks: Flask, Django, Rails <br>
-                Backend Testing Frameworks: Unittest (Python3), ... <br>
-                Languages: Python 2.7/3.6, Java, GO 
-            </p>
+            <p> Hello, my name is Brandon Hiles, and thank you for checking out my website. I am a fullstack engineer with expertises in a variety in technologies ranging from Angular, React to Node/Express, Flask including building REST APIs, utilizing MYSQL and mongoDB. Currently, I am most focused on utilizing Angular 7 for frontend and Flask-based bakend, and this is illustrated with my current app in progress called Erika (Full description can be found in app section) </p>
+
+            <p> Education: I have graduated from the University of Waterloo with a bachelors in sceince in physics and astronomy. Throughout my career, I have developed strong development skills through co-op experiences, engineering teams, and personal projects.  </p>
           </div>
         </div>
-      </div>
+      <div>
+        <div class="main-container" style="box-sizing: border-box; border: 0.5px solid red;">
+            <div class="left-container" style=" box-sizing: border-box; border: 0.5px solid red;">
+            <div class="half-containers" style=" box-sizing: border-box; border: 0.5px solid red;"> 
+            <h3 style="text-align: center; color: #81d4fa;"> Front end </h3>
+            <p>
+                  Frontend Frameworks: Angular, React, Vue.js <br>
+                  Frontend Testing Frameworks: Jest, Cyrprus, Selenium <br>
+                  Languages: Javascript, Typescript, Coffeescript <br>
+            </p>
+            </div>
+            <div class="half-containers" style=" box-sizing: border-box; border: 0.5px solid red;">
+              <h3 style="text-align: center; color: #81d4fa;"> Back end </h3>
+              <p> 
+                  Backend Frameworks: Flask, Django, Rails <br>
+                  Backend Testing Frameworks: Unittest (Python3), ... <br>
+                  Languages: Python 2.7/3.6, Java, GO 
+              </p>
+            </div>
+            </div>
+            <div class="right-container" style=" box-sizing: border-box; border: 0.5px solid red;">
+                <div class="half-containers" style=" box-sizing: border-box; border: 0.5px solid red;">
+                  <h3 style="text-align: center; color: #81d4fa;"> Data Science Technology </h3>
+                  <p> Data Science Libraries: Numpy, Scipy, ... <br>
+                      Languages: Python, R, Javascript
+                  </p>
+                 </div>
+                <div class="half-containers" style=" box-sizing: border-box; border: 0.5px solid red;">
+                  <h3 style="text-align: center; color: #81d4fa;"> AI technology </h3>
+                  <p> 
+                    AI Libraries: TensorFlow, PyTorch, Keras<br>
+                    Languages: Python, Scala
+                  </p>
+                </div>
+            </div>
+        </div>
+      </div> 
+
     </section>
 
     <section id="apps">
@@ -92,8 +165,19 @@
       </div>
     </section>
 
-    <section id='blog'> 
-      <div class="main-format">
+    <section id='blog' style="height: 100%"> 
+      <!--
+        Format to try:
+
+                Title [Centered]
+Aplication Update | Fitness Update
+                  |
+App 1 | App 2     | Weight lift | Cardio
+p1    | p1        | p1          | p1
+p2    | p2        | p2          | p2
+       -->
+
+     <!-- <div class="main-format">
         <h1 style="text-align: center; color: white; margin: 0;"> March Blog Post </h1>
         <h2 style="text-align: center; color: white"> Appication Updates</h2>
         <div class="flex-container">
@@ -132,7 +216,7 @@
                 Stairmaster: 100 floors in 20 mins <br>
             </p>
           </div>
-        </div>
+        </div>-->
     </section>
 
 	</body>
