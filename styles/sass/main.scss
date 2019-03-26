@@ -90,7 +90,7 @@ header {
 /* --- App Section --- */
 #apps {
   background-size: cover;
-  background-image: url("img/dark-paths.png");
+  background-image: url("../img/dark-paths.png");
   background-position: center;
 }
 .col-container {
@@ -108,7 +108,7 @@ header {
 /* --- Blog Section --- */
 #blog {
   background-size: cover;
-  background-image: linear-gradient(rgba(0,0,0,0.3),#000), url("img/blog.jpeg");
+  background-image: linear-gradient(rgba(0,0,0,0.3),#000), url("../img/blog.jpeg");
   background-position: center;
 }
 
@@ -122,7 +122,7 @@ header {
 
 #about {
   background-size: cover;
-  background-image: url("img/darkness.png");
+  background-image: url("../img/darkness.png");
   background-position: center;
   margin: 0;
   height: 100%;

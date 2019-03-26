@@ -103,7 +103,7 @@ header {
 /* line 91, ../sass/main.scss */
 #apps {
   background-size: cover;
-  background-image: url("img/dark-paths.png");
+  background-image: url("../img/dark-paths.png");
   background-position: center;
 }
 
@@ -126,7 +126,7 @@ header {
 /* line 109, ../sass/main.scss */
 #blog {
   background-size: cover;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), #000000), url("img/blog.jpeg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), #000000), url("../img/blog.jpeg");
   background-position: center;
 }
 
@@ -140,7 +140,7 @@ header {
 /* line 123, ../sass/main.scss */
 #about {
   background-size: cover;
-  background-image: url("img/darkness.png");
+  background-image: url("../img/darkness.png");
   background-position: center;
   margin: 0;
   height: 100%;
