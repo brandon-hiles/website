@@ -1,0 +1,40 @@
+#about {
+  display: flex;
+  background-size: cover;
+  background-image: url("css/img/darkness.png");
+  background-position: center;
+  margin: 0;
+  height: 100%;
+}
+
+.about-header {
+  text-align: center;
+  color: white;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+
+.main-container {
+  height: 75%;
+  display: flex;
+}
+
+.left-container {
+  flex: 2 1 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.right-container {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.half-containers {
+  flex: 1;
+  overflow: auto;
+}

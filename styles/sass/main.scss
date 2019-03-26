@@ -1,0 +1,142 @@
+@import "compass/css3";
+
+$main-color: #81d4fa;
+
+/* --- General HTML Elements -- */
+html {
+  background-color: #fff;
+  color: #555;
+  font-family: 'Lato', sans-serif;
+  height: 100%;
+}
+
+div, p {
+  color: $main-color;
+}
+
+a {
+  text-decoration:none; /* No underscores */
+  color: #304ffe; /* Migrate to only apps section */
+}
+
+/* --- Nav Bar --- */
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+nav ul li {
+  float: left;
+}
+
+nav ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+/* Change the link color to #111 (black) on hover */
+nav ul li a:hover {
+  background-color: #111;
+}
+
+/* Header CSS Formating  */
+header {
+  background-size: cover;
+  background-image: linear-gradient(rgba(0,0,0,0.2),#000), url("../img/background.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+}
+
+.main-title {
+  margin: 0;
+  text-align: center;
+  font-size: 50;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+.sub-title {
+  margin: 0;
+  text-align: center;
+  color: white;
+  position: absolute;
+  top: 56%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+/* --- App Section --- */
+#apps {
+  background-size: cover;
+  background-image: url("img/dark-paths.png");
+  background-position: center;
+}
+.col-container {
+  display: flex;
+  width: 100%;
+  color: #81d4fa;
+  text-decoration: none;
+}
+.col {
+  flex: 1;
+  padding: 16px;
+  align-content: center;
+}
+
+/* --- Blog Section --- */
+#blog {
+  background-size: cover;
+  background-image: linear-gradient(rgba(0,0,0,0.3),#000), url("img/blog.jpeg");
+  background-position: center;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+}
+
+
+/* ---- About Section --- */
+
+#about {
+  background-size: cover;
+  background-image: url("img/darkness.png");
+  background-position: center;
+  margin: 0;
+  height: 100%;
+}
+
+.about-flex-container {
+  display: flex;
+  justify-content: column;
+  float: left;
+}
+
+.about-flex-container > div {
+  width: 550px;
+  margin: 10px;
+  line-height: 20px;
+  font-size: 12px;
+}
