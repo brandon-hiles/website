@@ -2,62 +2,16 @@
 
 	<head>
 		<title> Brandon Hiles Website </title>
-      <link rel="stylesheet" href="css/main.css">
-      <link rel="stylesheet" href="css/external/normalize.css">
+      <link rel="stylesheet" href="styles/css/main.css">
+      <link rel="stylesheet" href="styles/external/normalize.min.css">
       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-      <style type="text/css">
-        #about {
-        display: flex;
-        background-size: cover;
-        background-image: url("css/img/darkness.png");
-        background-position: center;  
-        margin: 0;
-        height: 100%;
-      }
-
-      .about-header {
-        text-align: center;
-        color: white;
-        position: absolute;
-        margin-left: auto;
-        margin-right: auto;
-        left: 0;
-        right: 0;
-      }
-
-      .main-container {
-        height: 50%;
-        display: flex;
-      }
-
-      .left-container {
-        flex: 2 1 auto;
-        display: flex;
-        flex-direction: column;
-      }
-
-      .right-container {
-        flex: 1 1 auto;
-        display: flex;
-        flex-direction: column;
-      }
-
-      .half-containers {
-        flex: 1;
-        overflow: auto;
-      }
-
-      p {
-        color: #81d4fa;
-      } 
-      </style>
 	</head>
 
 	<body>
     <nav class="sticky">
       <ul>
         <li><a class="active" href=".">Home</a></li>
-        <li style="float:right"> <a class="active" target="_blank" href="https://www.github.com/brandon-hiles"> Github </a> </li>         
+        <li style="float:right"> <a class="active" target="_blank" href="https://www.github.com/brandon-hiles"> Github </a> </li>
         <li style="float:right"><a class="active" target="_blank" href="resume.pdf">Resume</a></li>
         <li style="float:right"> <a class="active" href="http://localhost/website/index.html#apps"> Apps </a> </li>
         <li style="float: right"> <a class="active" href="http://localhost/website/index.html#blog"> Blog </a></li>
@@ -66,157 +20,130 @@
     </nav>
 
     <header>
+      <!-- Need to make images more responsive -->
       <h1 class="main-title"> Brandon Hiles </h1>
       <p class="sub-title"> Full Stack Developer </p>
     </header>
 
-    <section id = 'about'>
-      <!-- Try Implementing the following feature:  https://css-tricks.com/snippets/css/a-guide-to-flexbox/ -->
-      <h1 class="about-header"> About Section </h1>
-        <div class="about-flex-container" style="clear: left">
-          <div style="color: #81d4fa">
-            <h1> Small Bio of Myself </h1>
-            <p> Hello, my name is Brandon Hiles, and thank you for checking out my website. I am a fullstack engineer with expertises in a variety in technologies ranging from Angular, React to Node/Express, Flask including building REST APIs, utilizing MYSQL and mongoDB. Currently, I am most focused on utilizing Angular 7 for frontend and Flask-based bakend, and this is illustrated with my current app in progress called Erika (Full description can be found in app section) </p>
-
-            <p> Education: I have graduated from the University of Waterloo with a bachelors in sceince in physics and astronomy. Throughout my career, I have developed strong development skills through co-op experiences, engineering teams, and personal projects.  </p>
-          </div>
-        </div>
-      <div>
-        <div class="main-container" style="box-sizing: border-box; border: 0.5px solid red;">
-            <div class="left-container" style=" box-sizing: border-box; border: 0.5px solid red;">
-            <div class="half-containers" style=" box-sizing: border-box; border: 0.5px solid red;"> 
-            <h3 style="text-align: center; color: #81d4fa;"> Front end </h3>
-            <p>
-                  Frontend Frameworks: Angular, React, Vue.js <br>
-                  Frontend Testing Frameworks: Jest, Cyrprus, Selenium <br>
-                  Languages: Javascript, Typescript, Coffeescript <br>
-            </p>
-            </div>
-            <div class="half-containers" style=" box-sizing: border-box; border: 0.5px solid red;">
-              <h3 style="text-align: center; color: #81d4fa;"> Back end </h3>
-              <p> 
-                  Backend Frameworks: Flask, Django, Rails <br>
-                  Backend Testing Frameworks: Unittest (Python3), ... <br>
-                  Languages: Python 2.7/3.6, Java, GO 
-              </p>
-            </div>
-            </div>
-            <div class="right-container" style=" box-sizing: border-box; border: 0.5px solid red;">
-                <div class="half-containers" style=" box-sizing: border-box; border: 0.5px solid red;">
-                  <h3 style="text-align: center; color: #81d4fa;"> Data Science Technology </h3>
-                  <p> Data Science Libraries: Numpy, Scipy, ... <br>
-                      Languages: Python, R, Javascript
-                  </p>
-                 </div>
-                <div class="half-containers" style=" box-sizing: border-box; border: 0.5px solid red;">
-                  <h3 style="text-align: center; color: #81d4fa;"> AI technology </h3>
-                  <p> 
-                    AI Libraries: TensorFlow, PyTorch, Keras<br>
-                    Languages: Python, Scala
-                  </p>
-                </div>
-            </div>
-        </div>
-      </div> 
-
+    <section id="about">
+      <h1 style="text-align: center; color: white; margin: 0;"> About Section </h1>
     </section>
 
     <section id="apps">
       <div class="col-container">
         <div class="col">
           <h2> Erika </h2>
-          <img src="css/img/erika.png" width="400" height="200"/>      
+          <img src="styles/img/erika.png" width="400" height="200"/>
         </div>
 
         <div class="col">
           <h2>Erika Description</h2>
           <p> Erika is an AI financial assistant, that helps investors make quick decisions by providing open source data such as company data, economic data. This Application is written using the Angular Framework for Front-end functionality, and utilizes a Python3 backend running a Flask based server. The main AI component utilizes an in-house based NLP model, that is freely available on github, and communicates with python through an internal ubuntu server.</p> <!-- Update this description -->
           <p> Status: On-going </p>
-          <p> Github Link: <a href='https://github.com/brandon-hiles/erika' target="_blank"> https://github.com/brandon-hiles/erika </a> </p>
+          <p> Github Link: <a href='https://github.com/brandon-hiles/erika' target="_blank" title="app-link"> https://github.com/brandon-hiles/erika </a> </p>
         </div>
       </div>
 
       <div class="col-container">
         <div class="col">
           <h2> Clockly - The Time Wizard </a></h2>
-          <img src="css/img/time_app.png" width="400" height="200">
+          <img src="styles/img/time_app.png" width="400" height="200">
         </div>
         <div class="col">
           <h2>Clockly Description</h2>
           <p> Time Management is an important skill to master, and managing your available is important for understanding where you spend most of your time. This may be espically useful, when working on projects, and understanding whether you are reading documentation, actually writing code, standup meetings, etc. and managing all of this information can be challenging. This problem can be solved with this application called Clockly. Clockly is a lightweight javascript application that takes in either pre-defined csv files and/or manually inserted data and helps track time analytics by providing reports either in browser or through email services.</p> <!-- Update this description -->
           <p> Status: On-going </p>
-          <p> Try out this Application: <a href="http://www.brandonhiles.com/apps/time-wizard" target="_blank"> http://www.brandonhiles.com/apps/time-wizard </a> </p>
-          <p> Github Link: <a href='https://github.com/brandon-hiles/time-wizard' target="_blank"> https://github.com/brandon-hiles/time-wizard </a> </p>
+          <p> Try out this Application: <a href="http://www.brandonhiles.com/apps/time-wizard" target="_blank" title="app-link"> http://www.brandonhiles.com/apps/time-wizard </a> </p>
+          <p> Github Link: <a href='https://github.com/brandon-hiles/time-wizard' target="_blank" title="app-link"> https://github.com/brandon-hiles/time-wizard </a> </p>
         </div>
       </div>
       <div class="col-container">
         <div class="col">
           <h2>  Chexpiry </h2>
-          <img src="css/img/chexpiry.png" width="400" height="200">      
+          <img src="styles/img/chexpiry.png" width="400" height="200">
         </div>
 
         <div class="col">
           <h2>Chexpiry Description</h2>
           <p> Chexpiry is an application that tackles the issue of sustainability through the minimization of food wastage. This application utilizes computer vision AI models provided by google to analyze food, mainly produce, to understand expiration dates by analyzing color tones of said produce. This application was developed for UofT Hacks VI, the architeture of this application was written using the Bootstrap library for the frontend, and using a python3 backend using Flask. The Application was hosted through Heroku.</p> <!-- Update this description -->
           <p> Status: Complete </p>
-          <p> Try out this Application: <a href='http://www.brandonhiles.com/apps/chexpiry/' target="_blank">  http://www.brandonhiles.com/apps/chexpiry/ </a> </p>
-          <p> Github Link: <a href='https://github.com/brandon-hiles/Chexpiry' target="_blank">  https://github.com/brandon-hiles/Chexpiry </a> </p>
+          <p> Try out this Application: <a href='http://www.brandonhiles.com/apps/chexpiry/' target="_blank" title="app-link">  http://www.brandonhiles.com/apps/chexpiry/ </a> </p>
+          <p> Github Link: <a href='https://github.com/brandon-hiles/Chexpiry' target="_blank" title="app-link">  https://github.com/brandon-hiles/Chexpiry </a> </p>
         </div>
       </div>
     </section>
 
-    <section id='blog' style="height: 100%"> 
-      <!--
-        Format to try:
+    <section id='about' style="height: 100%">
 
-                Title [Centered]
-Aplication Update | Fitness Update
-                  |
-App 1 | App 2     | Weight lift | Cardio
-p1    | p1        | p1          | p1
-p2    | p2        | p2          | p2
-       -->
+			        <div class="about-flex-container">
+			          <div style="color: #81d4fa">
+			            <h1 style="text-align: center;"> Small Bio of Myself </h1>
+			            <p>
+									Hello, my name is Brandon Hiles, I am a self taught Full Stack Developer
+									and thank you for checking out my website. I started my Full Stack Developer Journey
+									in 2017, when I entered my first hackathon, StartHacks, where my buddy Kangza and I
+									built a small NLP-based real-estate app that utilized data mining to retrieve articles
+									from sites like kajjijj, air b&b, etc. The application was built using a react Frontend
+									and a node/express backend with a python data mining bot.
+									</p>
+									<p>
+										Education: I have recently graduated from the University of Waterloo with a bachlor's
+										degree in physics and astronomy. I am completely self-taught in the field of software
+										development, and currently I am working on several node applications and angular applciations.
+									</p>
+								</p>
+			          </div>
+			          <div style="color: #81d4fa">
+			            <h1 style="text-align: center;"> Technology Breakdown: </h1>
+			            <p>
+			                Frontend Frameworks: Angular, React <br>
+			                Frontend Testing Frameworks: Augrey, Jest, Cyrprus, Selenium <br>
+			                Languages: Javascript, Typescript, Coffeescript <br>
+			                </p><hr>
+			                Backend Frameworks: Flask, Django, Rails <br>
+			                Backend Testing Frameworks: Unittest (Python3), ... <br>
+			                Languages: Python 2.7/3.6, Java, GO
+			            <p></p>
+			          </div>
+			        </div>
+			        <div class="about-flex-container">
+			          <div style="color: #81d4fa">
+			            <h1 style="text-align: center;"> Resources </h1>
+									<p> Throughout my web development career, I have encountered a number of really useful tools and websites. In this section, I will document some of these cool tools: </p>
+									<h3> CSS </h3>
+									<p>
+										 1. https://css-tricks.com/ <br>
+										 2. https://developer.mozilla.org/en-US/docs/Web/CSS/Reference <br>
+										 3. https://caniuse.com/ <br>
+										 4. https://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048
+									</p>
+									<h3> Angular Tools </h3>
+									<p>
+										1. Angrey <br>
+										2. NX <br>
+										3. Jest <br>
+										4. Cypress
+									</p>
+								</div>
+			          	<div style="color: #81d4fa">
+			          		<h1 style="text-align: center;"> Currnet Interests </h1>
+										<p>
+											 My current interests can be divided into 3 sections: <br> <br>
+											 1. Quantum information: In addition to full stack development,
+											 another interest of mine is in the field of quantum information.
+											 Currently, I am investigating various forms of quantum error-correction,
+											 different quantum computer implementations, and various quantum algorithms
+											 in relation to the medical sector. In the future, I am hoping on utilizing
+											 this knowledge to build a startup specializing in solving medical problems
+											 through the power of quantum information.
+											 <br>
+											 2. Artifical Intelligence:
+											 <br>
+											 3. Frontend Frameworks:
 
-     <!-- <div class="main-format">
-        <h1 style="text-align: center; color: white; margin: 0;"> March Blog Post </h1>
-        <h2 style="text-align: center; color: white"> Appication Updates</h2>
-        <div class="flex-container">
-          <div>
-            <h3> Clocky Update: </h3>
-            <p> Implemented the following features:
-              <br> 1. Integrated AWS for storage 
-              <br> 2. Started implementation of d3.js for visualization
-              <br> 3. Built a login page
-            </p>
-          </div>
-          <div>
-            <h3> Erika Update </h3>
-            <p> Implemented the following features:
-              <br> 1. Utilized MongoDB for full text search
-              <br> 2. Implemented a starting API template
-              <br> 3. Started implemented of data visualization
-            </p>
-          </div>
-        </div>
-      </div>
-        <h2 style="text-align: center; color: white"> Fitness Updates</h2>
-        <div class="flex-container">
-          <div>
-            <h3> Weight Lifting Update: </h3>
-            <p> Deadlift: 3 reps of 335 <br>
-                Bench Press: 3 reps of 150 <br>
-                Overhead Press: 3 reps of 135 <br>
-                Squat: 3 reps of 200 <br>
-            </p>
-          </div>              
-          <div>
-            <h3> Cardio Update: </h3>
-            <p> Sled push: 235 lb for 25 m <br>
-                Treadmill: 1 miles in 20 mins <br>
-                Stairmaster: 100 floors in 20 mins <br>
-            </p>
-          </div>
-        </div>-->
+										 </p>
+			        	</div>
+							</div>
     </section>
 
 	</body>

@@ -1,11 +1,8 @@
 @import "compass/css3";
-
-$main-color: #81d4fa;
+@import "variables";
 
 /* --- General HTML Elements -- */
 html {
-  background-color: #fff;
-  color: #555;
   font-family: 'Lato', sans-serif;
   height: 100%;
 }
@@ -15,8 +12,7 @@ div, p {
 }
 
 a {
-  text-decoration:none; /* No underscores */
-  color: #304ffe; /* Migrate to only apps section */
+  text-decoration: none; /* No underscores */
 }
 
 /* --- Nav Bar --- */
@@ -26,12 +22,13 @@ a {
   left: 0;
   width: 100%;
 }
-nav ul {
+
+.sticky ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color: $nav-color;
 }
 
 nav ul li {
@@ -47,18 +44,18 @@ nav ul li a {
 }
 
 .active {
-  background-color: #4CAF50;
+  background-color: $nav-active-color;
 }
 
 /* Change the link color to #111 (black) on hover */
 nav ul li a:hover {
-  background-color: #111;
+  background-color: $nav-hover-color;
 }
 
 /* Header CSS Formating  */
 header {
   background-size: cover;
-  background-image: linear-gradient(rgba(0,0,0,0.2),#000), url("../img/background.jpeg");
+  background-image: $header-grad, $header-location;
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
@@ -90,13 +87,13 @@ header {
 /* --- App Section --- */
 #apps {
   background-size: cover;
-  background-image: url("../img/dark-paths.png");
+  background-image: $app-background-location;
   background-position: center;
 }
 .col-container {
   display: flex;
   width: 100%;
-  color: #81d4fa;
+  color: $main-color;
   text-decoration: none;
 }
 .col {
@@ -105,24 +102,15 @@ header {
   align-content: center;
 }
 
-/* --- Blog Section --- */
-#blog {
-  background-size: cover;
-  background-image: linear-gradient(rgba(0,0,0,0.3),#000), url("../img/blog.jpeg");
-  background-position: center;
+a[title='app-link'] {
+  color: $app-link-color;
 }
-
-.flex-container {
-  display: flex;
-  flex-direction: row;
-}
-
 
 /* ---- About Section --- */
 
 #about {
   background-size: cover;
-  background-image: url("../img/darkness.png");
+  background-image: $about-location;
   background-position: center;
   margin: 0;
   height: 100%;

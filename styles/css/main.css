@@ -1,27 +1,28 @@
+/* Main Elements */
+/* Nav Section */
+/* Header Section */
+/* About Section */
+/* App Section */
 /* --- General HTML Elements -- */
-/* line 6, ../sass/main.scss */
+/* line 5, ../sass/main.scss */
 html {
-  background-color: #fff;
-  color: #555;
   font-family: 'Lato', sans-serif;
   height: 100%;
 }
 
-/* line 13, ../sass/main.scss */
+/* line 10, ../sass/main.scss */
 div, p {
   color: #81d4fa;
 }
 
-/* line 17, ../sass/main.scss */
+/* line 14, ../sass/main.scss */
 a {
   text-decoration: none;
   /* No underscores */
-  color: #304ffe;
-  /* Migrate to only apps section */
 }
 
 /* --- Nav Bar --- */
-/* line 23, ../sass/main.scss */
+/* line 19, ../sass/main.scss */
 .sticky {
   position: fixed;
   top: 0;
@@ -29,8 +30,8 @@ a {
   width: 100%;
 }
 
-/* line 29, ../sass/main.scss */
-nav ul {
+/* line 26, ../sass/main.scss */
+.sticky ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -38,12 +39,12 @@ nav ul {
   background-color: #333;
 }
 
-/* line 37, ../sass/main.scss */
+/* line 34, ../sass/main.scss */
 nav ul li {
   float: left;
 }
 
-/* line 41, ../sass/main.scss */
+/* line 38, ../sass/main.scss */
 nav ul li a {
   display: block;
   color: white;
@@ -52,19 +53,19 @@ nav ul li a {
   text-decoration: none;
 }
 
-/* line 49, ../sass/main.scss */
+/* line 46, ../sass/main.scss */
 .active {
   background-color: #4CAF50;
 }
 
 /* Change the link color to #111 (black) on hover */
-/* line 54, ../sass/main.scss */
+/* line 51, ../sass/main.scss */
 nav ul li a:hover {
   background-color: #111;
 }
 
 /* Header CSS Formating  */
-/* line 59, ../sass/main.scss */
+/* line 56, ../sass/main.scss */
 header {
   background-size: cover;
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), #000000), url("../img/background.jpeg");
@@ -74,7 +75,7 @@ header {
   height: 100vh;
 }
 
-/* line 68, ../sass/main.scss */
+/* line 65, ../sass/main.scss */
 .main-title {
   margin: 0;
   text-align: center;
@@ -87,7 +88,7 @@ header {
   transform: translate(-50%, -50%);
 }
 
-/* line 79, ../sass/main.scss */
+/* line 76, ../sass/main.scss */
 .sub-title {
   margin: 0;
   text-align: center;
@@ -100,14 +101,14 @@ header {
 }
 
 /* --- App Section --- */
-/* line 91, ../sass/main.scss */
+/* line 88, ../sass/main.scss */
 #apps {
   background-size: cover;
   background-image: url("../img/dark-paths.png");
   background-position: center;
 }
 
-/* line 96, ../sass/main.scss */
+/* line 93, ../sass/main.scss */
 .col-container {
   display: flex;
   width: 100%;
@@ -115,29 +116,20 @@ header {
   text-decoration: none;
 }
 
-/* line 102, ../sass/main.scss */
+/* line 99, ../sass/main.scss */
 .col {
   flex: 1;
   padding: 16px;
   align-content: center;
 }
 
-/* --- Blog Section --- */
-/* line 109, ../sass/main.scss */
-#blog {
-  background-size: cover;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), #000000), url("../img/blog.jpeg");
-  background-position: center;
-}
-
-/* line 115, ../sass/main.scss */
-.flex-container {
-  display: flex;
-  flex-direction: row;
+/* line 105, ../sass/main.scss */
+a[title='app-link'] {
+  color: #304ffe;
 }
 
 /* ---- About Section --- */
-/* line 123, ../sass/main.scss */
+/* line 111, ../sass/main.scss */
 #about {
   background-size: cover;
   background-image: url("../img/darkness.png");
@@ -146,14 +138,14 @@ header {
   height: 100%;
 }
 
-/* line 131, ../sass/main.scss */
+/* line 119, ../sass/main.scss */
 .about-flex-container {
   display: flex;
   justify-content: column;
   float: left;
 }
 
-/* line 137, ../sass/main.scss */
+/* line 125, ../sass/main.scss */
 .about-flex-container > div {
   width: 550px;
   margin: 10px;
