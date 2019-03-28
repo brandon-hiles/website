@@ -128,3 +128,23 @@ a[title='app-link'] {
   line-height: 20px;
   font-size: 12px;
 }
+
+.about-flex-container-bottom {
+    display: flex;
+    justify-content: column;
+    float: left;
+}
+
+.about-flex-container-bottom > div {
+  width: 100%;
+  margin: 10px;
+  line-height: 20px;
+  font-size: 12px;
+}
+
+.resource-tab {
+  width: 25%;
+  -webkit-box-shadow: 10px 21px 64px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 21px 64px 0px rgba(0,0,0,0.75);
+  box-shadow: 10px 21px 64px 0px rgba(0,0,0,0.75);
+}
