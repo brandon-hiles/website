@@ -13,6 +13,7 @@ div, p {
 
 a {
   text-decoration: none; /* No underscores */
+  color: $app-link-color;
 }
 
 /* --- Nav Bar --- */
@@ -123,27 +124,27 @@ a[title='app-link'] {
 }
 
 .about-flex-container > div {
-  width: 550px;
+  width: 50%;
   margin: 10px;
   line-height: 20px;
   font-size: 12px;
 }
 
-.about-flex-container-bottom {
-    display: flex;
-    justify-content: column;
-    float: left;
+.about-flex-lower {
+  display: flex;
+  justify-content: column;
+  float: left;
 }
 
-.about-flex-container-bottom > div {
-  width: 100%;
+.about-flex-lower > div {
+  width: 630px; /* Change this later for responsive design */
   margin: 10px;
   line-height: 20px;
   font-size: 12px;
 }
 
 .resource-tab {
-  width: 25%;
+  width: 24%;
   -webkit-box-shadow: 10px 21px 64px 0px rgba(0,0,0,0.75);
   -moz-box-shadow: 10px 21px 64px 0px rgba(0,0,0,0.75);
   box-shadow: 10px 21px 64px 0px rgba(0,0,0,0.75);

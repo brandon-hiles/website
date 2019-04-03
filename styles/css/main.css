@@ -19,10 +19,11 @@ div, p {
 a {
   text-decoration: none;
   /* No underscores */
+  color: #304ffe;
 }
 
 /* --- Nav Bar --- */
-/* line 19, ../sass/main.scss */
+/* line 20, ../sass/main.scss */
 .sticky {
   position: fixed;
   top: 0;
@@ -30,7 +31,7 @@ a {
   width: 100%;
 }
 
-/* line 26, ../sass/main.scss */
+/* line 27, ../sass/main.scss */
 .sticky ul {
   list-style-type: none;
   margin: 0;
@@ -39,12 +40,12 @@ a {
   background-color: #333;
 }
 
-/* line 34, ../sass/main.scss */
+/* line 35, ../sass/main.scss */
 nav ul li {
   float: left;
 }
 
-/* line 38, ../sass/main.scss */
+/* line 39, ../sass/main.scss */
 nav ul li a {
   display: block;
   color: white;
@@ -53,19 +54,19 @@ nav ul li a {
   text-decoration: none;
 }
 
-/* line 46, ../sass/main.scss */
+/* line 47, ../sass/main.scss */
 .active {
   background-color: #4CAF50;
 }
 
 /* Change the link color to #111 (black) on hover */
-/* line 51, ../sass/main.scss */
+/* line 52, ../sass/main.scss */
 nav ul li a:hover {
   background-color: #111;
 }
 
 /* Header CSS Formating  */
-/* line 56, ../sass/main.scss */
+/* line 57, ../sass/main.scss */
 header {
   background-size: cover;
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), #000000), url("../img/background.jpeg");
@@ -75,7 +76,7 @@ header {
   height: 100vh;
 }
 
-/* line 65, ../sass/main.scss */
+/* line 66, ../sass/main.scss */
 .main-title {
   margin: 0;
   text-align: center;
@@ -88,7 +89,7 @@ header {
   transform: translate(-50%, -50%);
 }
 
-/* line 76, ../sass/main.scss */
+/* line 77, ../sass/main.scss */
 .sub-title {
   margin: 0;
   text-align: center;
@@ -101,14 +102,14 @@ header {
 }
 
 /* --- App Section --- */
-/* line 88, ../sass/main.scss */
+/* line 89, ../sass/main.scss */
 #apps {
   background-size: cover;
   background-image: url("../img/dark-paths.png");
   background-position: center;
 }
 
-/* line 93, ../sass/main.scss */
+/* line 94, ../sass/main.scss */
 .col-container {
   display: flex;
   width: 100%;
@@ -116,20 +117,20 @@ header {
   text-decoration: none;
 }
 
-/* line 99, ../sass/main.scss */
+/* line 100, ../sass/main.scss */
 .col {
   flex: 1;
   padding: 16px;
   align-content: center;
 }
 
-/* line 105, ../sass/main.scss */
+/* line 106, ../sass/main.scss */
 a[title='app-link'] {
   color: #304ffe;
 }
 
 /* ---- About Section --- */
-/* line 111, ../sass/main.scss */
+/* line 112, ../sass/main.scss */
 #about {
   background-size: cover;
   background-image: url("../img/darkness.png");
@@ -138,39 +139,40 @@ a[title='app-link'] {
   height: 100%;
 }
 
-/* line 119, ../sass/main.scss */
+/* line 120, ../sass/main.scss */
 .about-flex-container {
   display: flex;
   justify-content: column;
   float: left;
 }
 
-/* line 125, ../sass/main.scss */
+/* line 126, ../sass/main.scss */
 .about-flex-container > div {
-  width: 550px;
+  width: 50%;
   margin: 10px;
   line-height: 20px;
   font-size: 12px;
 }
 
-/* line 132, ../sass/main.scss */
-.about-flex-container-bottom {
+/* line 133, ../sass/main.scss */
+.about-flex-lower {
   display: flex;
   justify-content: column;
   float: left;
 }
 
-/* line 138, ../sass/main.scss */
-.about-flex-container-bottom > div {
-  width: 100%;
+/* line 139, ../sass/main.scss */
+.about-flex-lower > div {
+  width: 630px;
+  /* Change this later for responsive design */
   margin: 10px;
   line-height: 20px;
   font-size: 12px;
 }
 
-/* line 145, ../sass/main.scss */
+/* line 146, ../sass/main.scss */
 .resource-tab {
-  width: 25%;
+  width: 24%;
   -webkit-box-shadow: 10px 21px 64px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 10px 21px 64px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 10px 21px 64px 0px rgba(0, 0, 0, 0.75);
