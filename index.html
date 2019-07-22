@@ -1,208 +1,46 @@
-<html>
+<head>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
 
-	<head>
-		<!-- Add meta section here -->
-		<title> Brandon Hiles Website </title>
-      <link rel="stylesheet" href="styles/css/main.css">
-      <link rel="stylesheet" href="styles/external/normalize.min.css">
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-	</head>
+<body>
+  <header>   
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="/">Home</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-     controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+      </button>
 
-	<body>
-    <nav class="sticky">
-      <ul>
-        <li><a class="active" href=".">Home</a></li>
-        <li style="float:right"> <a class="active" target="_blank" href="https://www.github.com/brandon-hiles"> Github </a> </li>
-        <li style="float:right"><a class="active" target="_blank" href="resume.pdf">Resume</a></li>
-        <li style="float:right"> <a class="active" href="http://localhost/website/index.html#apps"> Apps </a> </li>
-        <li style="float: right"> <a class="active" href="http://localhost/website/index.html#about"> About </a></li>
-
-      </ul>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="projects.html">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="resume.pdf"> Resume </a>
+          </li>
+        </ul>
+      </div>
     </nav>
-
-    <header>
-      <!-- Need to make images more responsive -->
-      <h1 class="main-title"> Brandon Hiles </h1>
-      <p class="sub-title"> Full Stack Developer </p>
-    </header>
-
-    <section id="about">
-      <h1 style="text-align: center; color: white; margin: 0;"> About Section </h1>
-			<div class="about-flex-container">
-				<div>
-					<h1 style="text-align: center;"> Small Bio of Myself </h1>
-					<p>
-					Hello, my name is Brandon Hiles, I am a self taught Full Stack Developer
-					and thank you for checking out my website. I started my Full Stack Developer Journey
-					in 2017, when I entered my first hackathon, StartHacks, where my buddy Kangza and I
-					built a small NLP-based real-estate app that utilized data mining to retrieve articles
-					from sites like kajjijj, air b&b, etc. The application was built using a react Frontend
-					and a node/express backend with a python data mining bot.
-					</p>
-					<p>
-						Education: I have recently graduated from the University of Waterloo with a bachlor's
-						degree in physics and astronomy. I am completely self-taught in the field of software
-						development, and currently I am working on several node applications and angular applciations.
-					</p>
-				</p>
-				</div>
-				<div>
-						<h1 style="text-align: center;"> Current Interests </h1>
-							<p>
-							 1. FullStack Technologies: The technological trends that I am looking into
-							 are the following: RUST, Angular2+, React, GraphQL, D3, Flask, Django, Ruby
-							 on Rails, and Mongo/MYSQL. Let's break down what I am hoping learn from each of
-							 these technologies through the use of a list: <br>
-							 <br>
-							 2. Artifical Intelligence:
-							 <br>
-							 3. Quantum information: In addition to full stack development,
-							 another interest of mine is in the field of quantum information.
-							 Currently, I am investigating various forms of quantum error-correction,
-							 different quantum computer implementations, and various quantum algorithms
-							 in relation to the medical sector. In the future, I am hoping on utilizing
-							 this knowledge to build a startup specializing in solving medical problems
-							 through the power of quantum information.
-
-							 </p>
-					</div>
-			</div>
-
-			<div class="about-flex-lower">
-				<div>
-					<h1 style="text-align: center;"> Technology Breakdown: </h1>
-					<div class="resource-tab" style="display: inline-block;">
-							<h3> Programming <br> Languages </h3>
-							<p>
-								 1. <a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript' target="_blank"> JavaScript </a>  <br>
-								 2. <a href='https://docs.python.org/3/' target="_blank"> Python (2 and 3) </a> <br>
-								 3. <a href='https://golang.org/doc/' target="_blank"> GO </a> <br>
-								 4. <a href='https://www.php.net/docs.php' target="_blank"> PHP </a> <br>
-								 5. <a href='https://doc.rust-lang.org/' target='_blank'> RUST </a> <br>
-								 6. <a href='https://docs.oracle.com/javase/8/docs/' target="_blank"> Java </a>
-							</p>
-					</div>
-					<div class="resource-tab" style="display: inline-block;">
-							<h3> Web <br> Frameworks </h3>
-							<p>
-								1. <a href='https://angular.io/docs' target='_blank'> Angular </a> <br>
-								2. <a href='https://reactjs.org/docs/getting-started.html' target="_blank"> React </a> <br>
-								3. <a href='https://getbootstrap.com/docs/4.1/getting-started/introduction/' target="_blank"> Bootstrap </a> <br>
-								4. <a href='https://expressjs.com/en/api.html' target="_blank"> Express </a> <br>
-								5. <a href='http://flask.pocoo.org/' target="_blank"> Flask </a> <br>
-								6. <a href='https://docs.djangoproject.com/en/2.2/' target="_blank"> Django </a>
-							</p>
-					</div>
-					<div class="resource-tab" style="display: inline-block;">
-						<h3> Testing <br> Frameworks </h3>
-						<p>
-							1. <a href='https://www.seleniumhq.org/docs/' target="_blank"> Selenium </a> <br>
-							2. <a href='https://jestjs.io/' target="_blank"> Jest </a> <br>
-							3. <a href='https://www.cypress.io/' target="_blank"> Cypress </a> <br>
-							4. <a href='https://augury.rangle.io/' target="_blank"> Augrey </a> <br>
-							5. <a href='https://onsi.github.io/ginkgo/' target="_blank"> Ginkgo </a> <br>
-							6. <a href='http://thucydides.info/docs/serenity-staging/' target="_blank"> Serenity </a>
-						</p>
-					</div>
-					<div class="resource-tab" style="display: inline-block;">
-						<h3> Additional <br> Resources </h3>
-						<p>
-							1. <a href='http://flask.pocoo.org/' target="_blank"> Flask </a> <br>
-							2. <a href='https://graphql.org/' target="_blank"> GraphQL </a> <br>
-							3. <a href='https://nodejs.org/en/docs/' target="_blank"> NodeJS  </a> <br>
-							4. <a href='https://dev.mysql.com/doc/' target="_blank"> MYSQL </a> <br>
-						</p>
-					</div>
-				</div>
-				<div>
-					<div>
-						<h1 style="text-align: center;"> Resources </h1>
-							<div class="resource-tab" style="display: inline-block;">
-									<!--<p> Throughout my web development career, I have encountered a number of really useful tools and websites. In this section, I will document some of these cool tools: </p>-->
-									<h3> CSS/SASS Resources </h3>
-									<p>
-										 1. <a href='https://css-tricks.com/' target="_blank"> CSS Tricks </a>  <br>
-										 2. <a href='https://developer.mozilla.org/en-US/docs/Web/CSS/Reference' target="_blank"> Offical Document </a> <br>
-										 3. <a href='https://caniuse.com/' target="_blank"> Can I use </a> <br>
-										 4. <a href='https://code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048' target="_blank"> CSS Selectors </a>
-									</p>
-							</div>
-							<div class="resource-tab" style="display: inline-block;">
-									<h3> Angular Tools </h3>
-									<p>
-										1. <a href='https://augury.rangle.io/' target="_blank"> Augrey </a> <br>
-										2. <a href='https://github.com/nrwl/nx' target="_blank"> NX </a> <br>
-										3. <a href='https://jestjs.io/' target="_blank"> Jest </a> <br>
-										4. <a href='https://www.cypress.io/' target="_blank"> Cypress </a>
-									</p>
-							</div>
-							<div class="resource-tab" style="display: inline-block;">
-								<h3> React Tools </h3>
-								<p>
-									1. <a href='https://reactstudio.com/' target="_blank"> React Studio </a> <br>
-									2. <a href='https://storybook.js.org/' target="_blank"> Storybook </a> <br>
-									3. <a href='https://reactjs.org/docs/getting-started.html' target="_blank"> Documentation </a> <br>
-									4. <a href='https://www.reactboilerplate.com/' target="_blank"> React BoilerPlate </a> <br>
-								</p>
-							</div>
-							<div class="resource-tab" style="display: inline-block;">
-								<h3> Backend Tools </h3>
-								<p>
-									1. <a href='http://flask.pocoo.org/' target="_blank"> Flask </a> <br>
-									2. <a href='https://graphql.org/' target="_blank"> GraphQL </a> <br>
-									3. <a href='https://nodejs.org/en/docs/' target="_blank"> NodeJS  </a> <br>
-									4. <a href='https://dev.mysql.com/doc/' target="_blank"> MYSQL </a> <br>
-								</p>
-							</div>
-					</div>
-				</div>
-			</div>
-    </section>
-
-    <section id="apps">
-      <div class="col-container">
-        <div class="col">
-          <h2> Erika </h2>
-          <img src="styles/img/erika.png" width="400" height="200"/>
+  </header>
+  
+   <section id="content-body">
+      <div class="container">
+        <div class="row h-100">
+          <div class="col-lg-12 col-md-12 my-auto"> 
+            <h1 class="w-25 mx-auto"> Brandon Hiles </h1>
+            <p class="w-25 mx-auto"> Full Stack Developer </p>
+              <div class="w-25 mx-auto">
+                <a href="https://www.github.com/brandon-hiles" target="_blank"> <img src="https://img.icons8.com/windows/32/000000/github.png" style="width: 30px; height: 30px;"> </a>
+                <a href="https://www.linkedin.com/in/brandon-hiles" target="_blank"> <img src="https://img.icons8.com/color/48/000000/linkedin.png" style="width: 30px; height: 30px"></a>
+                <a href="https://codepen.io/brandon-hiles" target="_blank"> <img src="https://blog.codepen.io/wp-content/uploads/2012/06/Button-Fill-Black-Large.png" style="width: 30px; height: 30px" alt="Codepen icon"></a>
+              </div>
+          </div>
         </div>
-
-        <div class="col">
-          <h2>Erika Description</h2>
-          <p> Erika is an AI financial assistant, that helps investors make quick decisions by providing open source data such as company data, economic data. This Application is written using the Angular Framework for Front-end functionality, and utilizes a Python3 backend running a Flask based server. The main AI component utilizes an in-house based NLP model, that is freely available on github, and communicates with python through an internal ubuntu server.</p> <!-- Update this description -->
-          <p> Status: On-going </p>
-          <p> Github Link: <a href='https://github.com/brandon-hiles/erika' target="_blank" title="app-link"> https://github.com/brandon-hiles/erika </a> </p>
-        </div>
-      </div>
-
-      <div class="col-container">
-        <div class="col">
-          <h2> Clockly - The Time Wizard </a></h2>
-          <img src="styles/img/time_app.png" width="400" height="200">
-        </div>
-        <div class="col">
-          <h2>Clockly Description</h2>
-          <p> Time Management is an important skill to master, and managing your available is important for understanding where you spend most of your time. This may be espically useful, when working on projects, and understanding whether you are reading documentation, actually writing code, standup meetings, etc. and managing all of this information can be challenging. This problem can be solved with this application called Clockly. Clockly is a lightweight javascript application that takes in either pre-defined csv files and/or manually inserted data and helps track time analytics by providing reports either in browser or through email services.</p> <!-- Update this description -->
-          <p> Status: On-going </p>
-          <p> Try out this Application: <a href="http://www.brandonhiles.com/apps/time-wizard" target="_blank" title="app-link"> http://www.brandonhiles.com/apps/time-wizard </a> </p>
-          <p> Github Link: <a href='https://github.com/brandon-hiles/time-wizard' target="_blank" title="app-link"> https://github.com/brandon-hiles/time-wizard </a> </p>
-        </div>
-      </div>
-      <div class="col-container">
-        <div class="col">
-          <h2>  Chexpiry </h2>
-          <img src="styles/img/chexpiry.png" width="400" height="200">
-        </div>
-
-        <div class="col">
-          <h2>Chexpiry Description</h2>
-          <p> Chexpiry is an application that tackles the issue of sustainability through the minimization of food wastage. This application utilizes computer vision AI models provided by google to analyze food, mainly produce, to understand expiration dates by analyzing color tones of said produce. This application was developed for UofT Hacks VI, the architeture of this application was written using the Bootstrap library for the frontend, and using a python3 backend using Flask. The Application was hosted through Heroku.</p> <!-- Update this description -->
-          <p> Status: Complete </p>
-          <p> Try out this Application: <a href='http://www.brandonhiles.com/apps/chexpiry/' target="_blank" title="app-link">  http://www.brandonhiles.com/apps/chexpiry/ </a> </p>
-          <p> Github Link: <a href='https://github.com/brandon-hiles/Chexpiry' target="_blank" title="app-link">  https://github.com/brandon-hiles/Chexpiry </a> </p>
-        </div>
-      </div>
-    </section>
-
-	</body>
-
-</html>
+     </div>
+  </section>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"> </script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
