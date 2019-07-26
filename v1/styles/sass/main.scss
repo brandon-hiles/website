@@ -1,0 +1,21 @@
+@import "compass/css3";
+@import "variables";
+
+/* --- General HTML Elements -- */
+html {
+  font-family: 'Lato', sans-serif;
+  height: 100%;
+}
+
+div, p {
+  color: $main-color;
+}
+
+a {
+  text-decoration: none; /* No underscores */
+  color: $app-link-color;
+}
+
+@import "header";
+@import "nav";
+@import "app";
