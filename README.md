@@ -1,2 +1,0 @@
-# website
-This is my portfolio website repo that lists all of my current applications AND my resources that I use to tackle problems spanning in a variety including website design, HTML/CSS, javascript etc.
