@@ -3,12 +3,25 @@
 @import "compass/css3";
 @import "variables";
 
+html {
+	font-family: 'Lato', serif !important;
+}
+
 body {
-	background: url(styles/img/cool-background.png) no-repeat center center fixed;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+	  background: url(styles/img/cool-background.png) no-repeat center center fixed;
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+}
+
+#content-body {
+	  background: url(../img/bg_OG.jpeg) no-repeat center center fixed;
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+		height: 100vh;
 }
 
 @import "projects";
