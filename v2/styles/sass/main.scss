@@ -15,8 +15,9 @@ body {
 	  background-size: cover;
 }
 
-#content-body {
+#landing-page {
 	  background: url(../img/bg_OG.jpeg) no-repeat center center fixed;
+	  background-image: linear-gradient(rgba(0,0,0,0.15),#000), url(../img/bg_OG.jpeg);
 	  -webkit-background-size: cover;
 	  -moz-background-size: cover;
 	  -o-background-size: cover;
