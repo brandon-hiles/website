@@ -22,7 +22,14 @@ body {
 	  -moz-background-size: cover;
 	  -o-background-size: cover;
 	  background-size: cover;
-		height: 100vh;
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+	  height: 100vh;
+
+	  .position {
+		  padding-left: 40px;
+	  }
 }
 
 #blog {
@@ -51,6 +58,13 @@ body {
 	  -moz-border-radius-topright: 5px;
 	  border-top-left-radius: 5px;
 	  border-top-right-radius: 5px;
+	}
+	.blog-title {
+		text-decoration: none;
+		color: white;
+		text-align: center;
+		font-size: 24px;
+		padding-top: 50px;
 	}
 }
 
