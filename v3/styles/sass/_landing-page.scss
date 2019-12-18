@@ -1,0 +1,34 @@
+#landing-page {
+    background: url(../img/bg_OG.jpeg) no-repeat center center fixed;
+    background-image: linear-gradient(rgba(0,0,0,0.15),#000), url(../img/bg_OG.jpeg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    .landing-container * {
+      color: white;
+    }
+
+    .position {
+        padding-left: 40px;
+    }
+
+    .full_name {
+      overflow: hidden; /* Ensures the content is not revealed until the animation */
+      white-space: nowrap; /* Keeps the content on a single line */
+      margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+      animation: 
+        typing 3.5s steps(50, end),
+    }
+    
+    /* The typing effect */
+  @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+}
